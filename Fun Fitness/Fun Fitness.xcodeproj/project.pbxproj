@@ -15,6 +15,8 @@
 		FA60841625F8BC9900E6363C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA60841425F8BC9900E6363C /* LaunchScreen.storyboard */; };
 		FA60842125F8BC9900E6363C /* Fun_FitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60842025F8BC9900E6363C /* Fun_FitnessTests.swift */; };
 		FA60842C25F8BC9900E6363C /* Fun_FitnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60842B25F8BC9900E6363C /* Fun_FitnessUITests.swift */; };
+		FAC2CE5D2609906500085F04 /* Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2CE5C2609906500085F04 /* Calculations.swift */; };
+		FAC2CE6226099A8A00085F04 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2CE6126099A8A00085F04 /* UserProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		FA60842725F8BC9900E6363C /* Fun FitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fun FitnessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA60842B25F8BC9900E6363C /* Fun_FitnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fun_FitnessUITests.swift; sourceTree = "<group>"; };
 		FA60842D25F8BC9900E6363C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC2CE5C2609906500085F04 /* Calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculations.swift; sourceTree = "<group>"; };
+		FAC2CE6126099A8A00085F04 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				FA60840925F8BC9800E6363C /* AppDelegate.swift */,
 				FA60840B25F8BC9800E6363C /* SceneDelegate.swift */,
 				FA60840D25F8BC9800E6363C /* ViewController.swift */,
+				FAC2CE6126099A8A00085F04 /* UserProfile.swift */,
+				FAC2CE5C2609906500085F04 /* Calculations.swift */,
 				FA60840F25F8BC9800E6363C /* Main.storyboard */,
 				FA60841225F8BC9900E6363C /* Assets.xcassets */,
 				FA60841425F8BC9900E6363C /* LaunchScreen.storyboard */,
@@ -260,7 +266,9 @@
 			files = (
 				FA60840E25F8BC9800E6363C /* ViewController.swift in Sources */,
 				FA60840A25F8BC9800E6363C /* AppDelegate.swift in Sources */,
+				FAC2CE6226099A8A00085F04 /* UserProfile.swift in Sources */,
 				FA60840C25F8BC9800E6363C /* SceneDelegate.swift in Sources */,
+				FAC2CE5D2609906500085F04 /* Calculations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

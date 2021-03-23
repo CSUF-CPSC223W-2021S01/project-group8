@@ -14,7 +14,7 @@ class ViewController: UIViewController
     @IBOutlet weak var userBMI: UILabel!
     @IBOutlet weak var inputHeight: UITextField!
     @IBOutlet weak var inputWeight: UITextField!
-    
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -25,11 +25,10 @@ class ViewController: UIViewController
     {
         let height = Double(inputHeight.text!)!
         let weight = Double(inputWeight.text!)!
-        
-        let bmi = weight/(height*height)
-        
-        userBMI.text = "\(bmi)"
+
+        let userProfile = Profile(height, weight)
+
+        userBMI.text = "\(userProfile.mybmi.display())"
     }
-    
 }
 
