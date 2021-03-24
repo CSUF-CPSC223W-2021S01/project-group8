@@ -17,6 +17,7 @@
 		FA60842C25F8BC9900E6363C /* Fun_FitnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60842B25F8BC9900E6363C /* Fun_FitnessUITests.swift */; };
 		FAC2CE5D2609906500085F04 /* Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2CE5C2609906500085F04 /* Calculations.swift */; };
 		FAC2CE6226099A8A00085F04 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2CE6126099A8A00085F04 /* UserProfile.swift */; };
+		FAF7CE23260B005200B439BF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7CE22260B005200B439BF /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FA60842D25F8BC9900E6363C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC2CE5C2609906500085F04 /* Calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculations.swift; sourceTree = "<group>"; };
 		FAC2CE6126099A8A00085F04 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		FAF7CE22260B005200B439BF /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				FA60841225F8BC9900E6363C /* Assets.xcassets */,
 				FA60841425F8BC9900E6363C /* LaunchScreen.storyboard */,
 				FA60841725F8BC9900E6363C /* Info.plist */,
+				FAF7CE22260B005200B439BF /* ListViewController.swift */,
 			);
 			path = "Fun Fitness";
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			files = (
 				FA60840E25F8BC9800E6363C /* ViewController.swift in Sources */,
 				FA60840A25F8BC9800E6363C /* AppDelegate.swift in Sources */,
+				FAF7CE23260B005200B439BF /* ListViewController.swift in Sources */,
 				FAC2CE6226099A8A00085F04 /* UserProfile.swift in Sources */,
 				FA60840C25F8BC9800E6363C /* SceneDelegate.swift in Sources */,
 				FAC2CE5D2609906500085F04 /* Calculations.swift in Sources */,
