@@ -3,7 +3,7 @@
 //  Fun FitnessTests
 //
 //  Created by Brandon Capparelli on 3/10/21.
-//
+//  Modified 3/23/21
 
 @testable import Fun_Fitness
 import XCTest
@@ -33,12 +33,12 @@ class Fun_FitnessTests: XCTestCase {
         let testBMI = BMI(0, 0) // Testing
         XCTAssertEqual(testBMI.weight, 0)
         XCTAssertEqual(testBMI.height, 0)
-        XCTAssertEqual(testBMI.bmi, 0) // The bmi will return '-nan' if the both properties are equal to zero
+        XCTAssertEqual(testBMI.bmi, 0)
     }
 
     func testBMIInitializer2() {
         let testBMI = BMI(0, 1)
-        XCTAssertEqual(testBMI.bmi, 0) // The bmi will return 'inf' if the denominator (Height) is equal to zero
+        XCTAssertEqual(testBMI.bmi, 0)
     }
 
     func testBMIFucntions1() {

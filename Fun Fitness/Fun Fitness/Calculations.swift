@@ -18,6 +18,9 @@ struct BMI
         self.height = height
         self.weight = weight
         bmi = weight/(height*height)
+        if bmi.isNaN || bmi.isInfinite {
+            bmi = 0
+        }
     }
     
     func display() -> String
