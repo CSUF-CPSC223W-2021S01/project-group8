@@ -22,7 +22,7 @@ struct BMI
     
     func display() -> String
     {
-        return "\(bmi)"
+        return "\(round(1000 * bmi)/1000)"
     }
 }
 
@@ -38,10 +38,10 @@ struct BMR
         self.height = height
         self.weight = weight
         self.age = age
-        bmr = ((10 * weight) + (6.25 * height) - (5 * age) + 5)
+        bmr = ((10 * weight) + (6.25 * (height * 100)) - (5  * age) + 5)
     }
     func display() -> String
     {
-        return "\(bmr)"
+        return "\(round(1000 * bmr)/1000)"
     }
 }
