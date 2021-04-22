@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA36344426312E1B00CE23FB /* AddProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA36344326312E1B00CE23FB /* AddProfileViewController.swift */; };
 		FA60840A25F8BC9800E6363C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60840925F8BC9800E6363C /* AppDelegate.swift */; };
 		FA60840C25F8BC9800E6363C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60840B25F8BC9800E6363C /* SceneDelegate.swift */; };
 		FA60840E25F8BC9800E6363C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60840D25F8BC9800E6363C /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA36344326312E1B00CE23FB /* AddProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProfileViewController.swift; sourceTree = "<group>"; };
 		FA60840625F8BC9800E6363C /* Fun Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fun Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA60840925F8BC9800E6363C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA60840B25F8BC9800E6363C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				FA60841425F8BC9900E6363C /* LaunchScreen.storyboard */,
 				FA60841725F8BC9900E6363C /* Info.plist */,
 				FAF7CE22260B005200B439BF /* ListViewController.swift */,
+				FA36344326312E1B00CE23FB /* AddProfileViewController.swift */,
 			);
 			path = "Fun Fitness";
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				FA60840E25F8BC9800E6363C /* ViewController.swift in Sources */,
 				FA60840A25F8BC9800E6363C /* AppDelegate.swift in Sources */,
 				FAF7CE23260B005200B439BF /* ListViewController.swift in Sources */,
+				FA36344426312E1B00CE23FB /* AddProfileViewController.swift in Sources */,
 				FAC2CE6226099A8A00085F04 /* UserProfile.swift in Sources */,
 				FA60840C25F8BC9800E6363C /* SceneDelegate.swift in Sources */,
 				FAC2CE5D2609906500085F04 /* Calculations.swift in Sources */,
