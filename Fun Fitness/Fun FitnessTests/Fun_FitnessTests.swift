@@ -96,4 +96,34 @@ class Fun_FitnessTests: XCTestCase {
         XCTAssertEqual(testBMR.bmr, 2117.5)
         XCTAssertEqual(testBMR.display(), "2117.5")
     }
+    func testProfile(){
+        let testProfile = Profile("Francisco", 1.78, 110, 20)
+        XCTAssertEqual(testProfile.height, 1.78)
+        XCTAssertEqual(testProfile.name, "Francisco")
+        XCTAssertEqual(testProfile.weight, 110)
+        XCTAssertEqual(testProfile.age, 20)
+        XCTAssertEqual(testProfile.mybmi.display(), "34.718")
+        XCTAssertEqual(testProfile.mybmr.display(), "2117.5")
+    }
+    func testProfilesInit(){
+        let _ = Profiles()
+    }
+    func testProfilesModifyGetDelete(){
+        var testProfiles = Profiles()
+        XCTAssertEqual(testProfiles.modify(name: "Francisco", password: "12345", height: 1.78, weight: 110, age: 20), "New profile created")
+        XCTAssertEqual(testProfiles.get(name: "Francisco", password: "12345")?.name , "Francisco")
+        XCTAssertEqual(testProfiles.modify(name: "Francisco", password: "12345", height: 2.0, weight: 120, age: 37), "Account has been modified")
+        XCTAssertEqual(testProfiles.get(name: "Francisco", password: "12345")?.height, 2.0)
+        XCTAssertEqual(testProfiles.modify(name: "Francisco", password: "ABCDE" , height: 6.7, weight: 300, age: 7000), "Invalid Name and Password")
+        XCTAssertNil(testProfiles.get(name: "blah", password: "blarg"))
+        XCTAssertEqual(testProfiles.delete(name: "Francisco", password: "12345"), "Profile Removed")
+        XCTAssertNil(testProfiles.get(name: "Francisco", password: "12345"))
+    }
+    func testProfilesSaveandLoad(){
+        var testProfiles1 = Profiles()
+        _ = testProfiles1.modify(name: "Francisco", password: "12345", height: 1.78, weight: 110, age: 20)
+        testProfiles1.save()
+        var testProfiles2 = Profiles()
+        XCTAssertEqual(testProfiles1.get(name: "Francisco", password: "12345")?.name, testProfiles2.get(name: "Francisco", password: "12345")?.name)
+    }
 }
