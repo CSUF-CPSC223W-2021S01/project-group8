@@ -1,8 +1,8 @@
 //
 //  Fun_FitnessUITests.swift
-//  Fun FitnessUITests
+//  Fun_FitnessUITests
 //
-//  Created by Brandon Capparelli on 3/10/21.
+//  Created by Brandon Capparelli on 5/4/21.
 //
 
 import XCTest
