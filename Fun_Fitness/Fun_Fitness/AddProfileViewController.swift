@@ -16,7 +16,7 @@ class AddProfileViewController: UIViewController, UINavigationControllerDelegate
     @IBOutlet weak var ageTextField: UITextField!
     @IBOutlet weak var sexTextField: UITextField!
     
-    let main: ViewController? = nil
+    let main: ViewController = ViewController()
     
     @IBAction func submit(_ sender: Any)
     {
@@ -26,11 +26,8 @@ class AddProfileViewController: UIViewController, UINavigationControllerDelegate
         let age = Double(ageTextField.text!)!
         let sex = String(sexTextField.text!)
         let new = Profile.init(name, height, weight, age, sex)
-        
-        
-        main?.profileSubmit(new)
         new.display()
-        
+        main.profileSubmit(new)
         dismiss(animated: true, completion: nil)
     }
 

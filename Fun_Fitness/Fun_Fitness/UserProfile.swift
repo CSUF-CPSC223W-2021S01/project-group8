@@ -36,3 +36,12 @@ struct Profile
         print("Name: \(name)\nAge: \(age)\n")
     }
 }
+
+var profileNames: [Profile] =
+[
+    Profile("B", 2, 120, 20, "Male"),
+    Profile("G", 2, 100, 20, "Male"),
+    Profile("K", 1.6, 111, 19, "Male"),
+    Profile("F", 2.1, 95, 20, "Male"),
+    Profile("J", 1.89, 97.5, 21, "Male")
+]
