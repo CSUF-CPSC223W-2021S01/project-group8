@@ -35,6 +35,7 @@ struct Profile
     {
         print("Name: \(name)\nAge: \(age)\n")
     }
+  
 }
 
 var profileNames: [Profile] =

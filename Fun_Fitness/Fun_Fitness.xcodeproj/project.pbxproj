@@ -19,6 +19,8 @@
 		FA2D24ED2642111F00B0D16F /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D24EA2642111F00B0D16F /* UserProfile.swift */; };
 		FA2D24EE2642111F00B0D16F /* Calculations 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D24EB2642111F00B0D16F /* Calculations 2.swift */; };
 		FA2D24EF2642111F00B0D16F /* Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D24EC2642111F00B0D16F /* Calculations.swift */; };
+		FA3B37742643994800850991 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B37722643994800850991 /* ExerciseViewController.swift */; };
+		FA66F9182643D39500FE6EE0 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66F9172643D39500FE6EE0 /* MyProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		FA2D24EA2642111F00B0D16F /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		FA2D24EB2642111F00B0D16F /* Calculations 2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calculations 2.swift"; sourceTree = "<group>"; };
 		FA2D24EC2642111F00B0D16F /* Calculations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculations.swift; sourceTree = "<group>"; };
+		FA3B37722643994800850991 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		FA66F9172643D39500FE6EE0 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +118,9 @@
 				FA2D24EC2642111F00B0D16F /* Calculations.swift */,
 				FA2D24EA2642111F00B0D16F /* UserProfile.swift */,
 				FA2D24E22642111400B0D16F /* AddProfileViewController.swift */,
+				FA3B37722643994800850991 /* ExerciseViewController.swift */,
 				FA2D24B526420FFC00B0D16F /* Main.storyboard */,
+				FA66F9172643D39500FE6EE0 /* MyProfileViewController.swift */,
 				FA2D24B826420FFE00B0D16F /* Assets.xcassets */,
 				FA2D24BA26420FFE00B0D16F /* LaunchScreen.storyboard */,
 				FA2D24BD26420FFE00B0D16F /* Info.plist */,
@@ -273,9 +279,11 @@
 				FA2D24B426420FFC00B0D16F /* ViewController.swift in Sources */,
 				FA2D24B026420FFC00B0D16F /* AppDelegate.swift in Sources */,
 				FA2D24ED2642111F00B0D16F /* UserProfile.swift in Sources */,
+				FA66F9182643D39500FE6EE0 /* MyProfileViewController.swift in Sources */,
 				FA2D24E32642111400B0D16F /* AddProfileViewController.swift in Sources */,
 				FA2D24B226420FFC00B0D16F /* SceneDelegate.swift in Sources */,
 				FA2D24EF2642111F00B0D16F /* Calculations.swift in Sources */,
+				FA3B37742643994800850991 /* ExerciseViewController.swift in Sources */,
 				FA2D24EE2642111F00B0D16F /* Calculations 2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,22 +5,21 @@
 //  Created by Brandon Capparelli on 3/10/21.
 //
 import UIKit
-
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
 {
-    
-
     @IBOutlet weak var profileField: UITextField!
     @IBAction func didTapEnter(_ sender: Any)
     {
-        
+        if profileField.text != ""
+        {
+            
+        }
     }
     
     @IBAction func didTapNewProfile(_ sender: Any)
     {
 
     }
-    
     
     var pickerView = UIPickerView()
     override func viewDidLoad()
