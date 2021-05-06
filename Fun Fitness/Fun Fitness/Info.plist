@@ -4,6 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Updating health information allows for accurate tracking of progress</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Sharing health information allows for accurate tracking of progress</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

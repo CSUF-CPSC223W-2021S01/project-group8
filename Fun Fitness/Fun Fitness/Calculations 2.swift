@@ -2,6 +2,7 @@
 //  Calculations.swift
 //  Fun Fitness
 //
+//  Created by Brandon Capparelli on 3/22/21.
 //
 
 import Foundation

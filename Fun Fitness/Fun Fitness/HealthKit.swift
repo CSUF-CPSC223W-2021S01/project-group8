@@ -53,4 +53,3 @@ class HealthKit {
   }
     
 }
-// https://developer.apple.com/documentation/healthkit/saving_data_to_healthkit
