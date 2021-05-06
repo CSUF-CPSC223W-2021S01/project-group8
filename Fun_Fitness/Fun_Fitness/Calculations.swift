@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BMI
+struct BMI: Codable
 {
     var height: Double
     var weight: Double
@@ -29,7 +29,7 @@ struct BMI
     }
 }
 
-struct BMR
+struct BMR: Codable
 {
     var height: Double
     var weight: Double

@@ -43,27 +43,25 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
     {
-        return profileNames.count
+        return profileNames.profiles.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
     {
-        return profileNames[row].name
+        return profileNames.profiles[row].name
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
-        profileField.text = profileNames[row].name
+        profileField.text = profileNames.profiles[row].name
         profileField.resignFirstResponder()
     }
     
     func profileSubmit(_ data: Profile)
     {
-        profileNames.append(data)
-        for profile in profileNames {
-            profile.display()
-        }
-        print(profileNames.count)
+        profileNames.profiles.append(data)
+        print(profileNames.profiles.count)
+        profileNames.save()
         pickerView.reloadAllComponents()
     }
 }

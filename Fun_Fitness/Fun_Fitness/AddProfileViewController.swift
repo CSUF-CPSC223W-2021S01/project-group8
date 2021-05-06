@@ -26,7 +26,6 @@ class AddProfileViewController: UIViewController, UINavigationControllerDelegate
         let age = Double(ageTextField.text!)!
         let sex = String(sexTextField.text!)
         let new = Profile.init(name, height, weight, age, sex)
-        new.display()
         main.profileSubmit(new)
         dismiss(animated: true, completion: nil)
     }
