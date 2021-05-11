@@ -21,7 +21,7 @@ class ExerciseViewController: UIViewController
     @IBAction func didTapEnter(_ sender: Any)
     {
         var label = outputLabel
-        let userBMR: Double = profileNames[main.pickerView.selectedRow(inComponent: 0)].mybmr.display()
+        let userBMR: Double = profileNames.profiles[main.pickerView.selectedRow(inComponent: 0)].mybmr.display()
         let burned: Double = Double(burnedField.text!)! + userBMR
         let consumed = Double(consumedField.text!)!
         //if userBMR

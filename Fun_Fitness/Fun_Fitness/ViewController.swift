@@ -20,7 +20,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     {
 
     }
-    
     var pickerView = UIPickerView()
     override func viewDidLoad()
     {
@@ -31,7 +30,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         profileField.inputView = pickerView
         profileField.textAlignment = .center
         profileField.placeholder = "Enter Profile"
-
         pickerView.reloadAllComponents()
     }
     
@@ -42,27 +40,24 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
     {
-        return profileNames.count
+        return profileNames.profiles.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
     {
-        return profileNames[row].name
+        currentProfile = profileNames.profiles[row]
+        return profileNames.profiles[row].name
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
-        profileField.text = profileNames[row].name
+        profileField.text = profileNames.profiles[row].name
         profileField.resignFirstResponder()
     }
     
     func profileSubmit(_ data: Profile)
     {
-        profileNames.append(data)
-        for profile in profileNames {
-            profile.display()
-        }
-        print(profileNames.count)
+        profileNames.profiles.append(data)
         pickerView.reloadAllComponents()
     }
 }

@@ -26,8 +26,7 @@ class MyProfileViewController: UIViewController
     
     func changeProfile()
     {
-        let selectedProfile = profileNames[main.pickerView.selectedRow(inComponent: 0)]
-        
+        let selectedProfile = currentProfile
         let name = "\(String(selectedProfile.name))\n"
         let weight = "\(String(selectedProfile.weight))\n"
         let height = "\(String(selectedProfile.height))\n"
