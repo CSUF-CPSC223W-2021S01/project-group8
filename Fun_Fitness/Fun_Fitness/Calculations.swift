@@ -23,13 +23,13 @@ struct BMI: Codable
         }
     }
     
-    func display() -> String
+    func display() -> Double
     {
-        return "\(round(1000 * bmi)/1000)"
+        return (round(1000 * bmi)/1000)
     }
 }
 
-struct BMR: Codable
+struct BMR :Codable
 {
     var height: Double
     var weight: Double
@@ -43,8 +43,8 @@ struct BMR: Codable
         self.age = age
         bmr = ((10 * weight) + (6.25 * (height * 100)) - (5  * age) + 5)
     }
-    func display() -> String
+    func display() -> Double
     {
-        return "\(round(1000 * bmr)/1000)"
+        return (round(1000 * bmr)/1000)
     }
 }
