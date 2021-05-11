@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Fun Fitness
+//  Fun_Fitness
 //
-//  Created by Brandon Capparelli on 3/10/21.
+//  Created by Brandon Capparelli on 5/4/21.
 //
 
 import UIKit

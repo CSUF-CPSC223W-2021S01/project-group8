@@ -1,9 +1,14 @@
 //
 //  Fun_FitnessTests.swift
-//  Fun FitnessTests
+//  Fun_FitnessTests
 //
+<<<<<<< HEAD:Fun Fitness/Fun FitnessTests/Fun_FitnessTests.swift
 //  Created by Brandon Capparelli on 3/10/21.
 //  Modified 3/23/21
+=======
+//  Created by Brandon Capparelli on 5/4/21.
+//
+>>>>>>> Brandon:Fun_Fitness/Fun_FitnessTests/Fun_FitnessTests.swift
 
 @testable import Fun_Fitness
 import XCTest
