@@ -7,8 +7,8 @@
 
 import Foundation
 //
-//struct BMI
-//{
+// struct BMI
+// {
 //
 //    var height: Double
 //    var weight: Double
@@ -82,8 +82,8 @@ import Foundation
 //
 //
 //
-//}
+// }
 //
 //
-//let defaults = UserDefaults.standard
+// let defaults = UserDefaults.standard
 //// https://youtu.be/U6odvRpv6SA https://www.youtube.com/watch?v=XzWBT6lIB3A

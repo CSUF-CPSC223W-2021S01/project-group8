@@ -5,16 +5,14 @@
 //  Created by Brandon Capparelli on 5/6/21.
 //
 
-import UIKit
 import Foundation
-
-
+import UIKit
 
 class MyProfileViewController: UIViewController
 {
-    @IBOutlet weak var userInfo: UILabel!
+    @IBOutlet var userInfo: UILabel!
     
-    var main: ViewController = ViewController()
+    var main = ViewController()
     
     override func viewDidLoad()
     {
@@ -22,20 +20,17 @@ class MyProfileViewController: UIViewController
         changeProfile()
     }
     
-    
-    
     func changeProfile()
     {
         let selectedProfile = currentProfile
-        let name = "\(String(selectedProfile.name))\n"
-        let weight = "\(String(selectedProfile.weight))\n"
-        let height = "\(String(selectedProfile.height))\n"
-        let age = "\(String(selectedProfile.age))\n"
-        let sex = "\(String(selectedProfile.sex))\n"
-        let userBMI = "\(String(selectedProfile.mybmi.display()))\n"
-        let userBMR = "\(String(selectedProfile.mybmr.display()))\n"
+        let name = "Name: \(String(selectedProfile.name))\n"
+        let weight = "Weight: \(String(selectedProfile.weight))\n"
+        let height = "Height: \(String(selectedProfile.height))\n"
+        let age = "Age: \(String(selectedProfile.age))\n"
+        let sex = "Sex: \(String(selectedProfile.sex))\n"
+        let userBMI = "Your BMI: \(String(selectedProfile.mybmi.display()))\n"
+        let userBMR = "Your BMR: \(String(selectedProfile.mybmr.display()))\n"
         
         userInfo.text = name + weight + height + age + sex + userBMI + userBMR
     }
-    
 }

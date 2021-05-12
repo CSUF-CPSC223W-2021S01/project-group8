@@ -9,15 +9,14 @@ import UIKit
 
 class AddProfileViewController: UIViewController, UINavigationControllerDelegate
 {
+    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var weightTextField: UITextField!
+    @IBOutlet var heightTextField: UITextField!
+    @IBOutlet var ageTextField: UITextField!
+    @IBOutlet var sexTextField: UITextField!
 
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var weightTextField: UITextField!
-    @IBOutlet weak var heightTextField: UITextField!
-    @IBOutlet weak var ageTextField: UITextField!
-    @IBOutlet weak var sexTextField: UITextField!
-    
-    let main: ViewController = ViewController()
-    
+    let main = ViewController()
+
     @IBAction func submit(_ sender: Any)
     {
         let name = String(nameTextField.text!)
@@ -25,22 +24,15 @@ class AddProfileViewController: UIViewController, UINavigationControllerDelegate
         let weight = Double(weightTextField.text!)!
         let age = Double(ageTextField.text!)!
         let sex = String(sexTextField.text!)
-        let new = Profile.init(name, height, weight, age, sex)
+        let new = Profile(name, height, weight, age, sex)
         new.display()
         main.profileSubmit(new)
         dismiss(animated: true, completion: nil)
     }
 
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
-    
-    // MARK: - Navigation
-    
-
 }

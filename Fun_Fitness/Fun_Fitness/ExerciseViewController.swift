@@ -9,12 +9,12 @@ import UIKit
 
 class ExerciseViewController: UIViewController
 {
-    @IBOutlet weak var burnedField: UITextField!
-    @IBOutlet weak var consumedField: UITextField!
-    @IBOutlet weak var outputLabel: UILabel!
-    @IBOutlet weak var userDate: UITextField! //not in use
+    @IBOutlet var burnedField: UITextField!
+    @IBOutlet var consumedField: UITextField!
+    @IBOutlet var outputLabel: UILabel!
+    @IBOutlet var userDate: UITextField! // not in use
     
-    var main: ViewController = ViewController()
+    var main = ViewController()
     
     let datePicker = UIDatePicker()
     
@@ -22,9 +22,9 @@ class ExerciseViewController: UIViewController
     {
         var label = outputLabel
         let userBMR: Double = profileNames.profiles[main.pickerView.selectedRow(inComponent: 0)].mybmr.display()
-        let burned: Double = Double(burnedField.text!)! + userBMR
+        let burned = Double(burnedField.text!)! + userBMR
         let consumed = Double(consumedField.text!)!
-        //if userBMR
+        // if userBMR
         
         if (burned - consumed) >= 0
         {
@@ -34,20 +34,17 @@ class ExerciseViewController: UIViewController
         {
             label?.text = "You consumed \(-(burned - consumed)) more calories \ntoday then you burned."
         }
-        
     }
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        //createDate()
+        // createDate()
     }
   
-
-
-//*********************************************************
-//Future addition
-//*********************************************************
+    // *********************************************************
+    // Future addition
+    // *********************************************************
 
 //    func createDate()
 //    {

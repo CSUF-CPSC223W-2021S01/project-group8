@@ -7,19 +7,13 @@
 import UIKit
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
 {
-    @IBOutlet weak var profileField: UITextField!
+    @IBOutlet var profileField: UITextField!
     @IBAction func didTapEnter(_ sender: Any)
-    {
-        if profileField.text != ""
-        {
-            
-        }
-    }
+    {}
     
     @IBAction func didTapNewProfile(_ sender: Any)
-    {
+    {}
 
-    }
     var pickerView = UIPickerView()
     override func viewDidLoad()
     {
@@ -59,6 +53,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     {
         profileNames.profiles.append(data)
         pickerView.reloadAllComponents()
+        profileNames.save()
     }
 }
-
