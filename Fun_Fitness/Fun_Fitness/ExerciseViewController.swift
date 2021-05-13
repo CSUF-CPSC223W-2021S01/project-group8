@@ -9,12 +9,12 @@ import UIKit
 
 class ExerciseViewController: UIViewController
 {
-    @IBOutlet var burnedField: UITextField!
-    @IBOutlet var consumedField: UITextField!
-    @IBOutlet var outputLabel: UILabel!
-    @IBOutlet var userDate: UITextField! // not in use
+    @IBOutlet weak var burnedField: UITextField!
+    @IBOutlet weak var consumedField: UITextField!
+    @IBOutlet weak var outputLabel: UILabel!
+    @IBOutlet weak var userDate: UITextField! //not in use
     
-    var main = ViewController()
+    var main: ViewController = ViewController()
     
     let datePicker = UIDatePicker()
     
@@ -22,9 +22,9 @@ class ExerciseViewController: UIViewController
     {
         var label = outputLabel
         let userBMR: Double = profileNames.profiles[main.pickerView.selectedRow(inComponent: 0)].mybmr.display()
-        let burned = Double(burnedField.text!)! + userBMR
+        let burned: Double = Double(burnedField.text!)! + userBMR
         let consumed = Double(consumedField.text!)!
-        // if userBMR
+        //if userBMR
         
         if (burned - consumed) >= 0
         {
@@ -34,38 +34,12 @@ class ExerciseViewController: UIViewController
         {
             label?.text = "You consumed \(-(burned - consumed)) more calories \ntoday then you burned."
         }
+        
     }
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // createDate()
+        //createDate()
     }
-  
-    // *********************************************************
-    // Future addition
-    // *********************************************************
-
-//    func createDate()
-//    {
-//        let toolbar = UIToolbar()
-//        let done = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
-//
-//        toolbar.sizeToFit()
-//        toolbar.setItems([done], animated: true)
-//
-//        userDate.inputView = datePicker
-//        datePicker.datePickerMode = .date
-//        datePicker.frame.size = CGSize(width: 50, height: 250)
-//    }
-//
-//    @objc func donePressed()
-//    {
-//        let format = DateFormatter()
-//        format.dateStyle = .medium
-//        format.timeStyle = .none
-//
-//        userDate.text = format.string(from: datePicker.date)
-//        self.view.endEditing(true)
-//    }
 }

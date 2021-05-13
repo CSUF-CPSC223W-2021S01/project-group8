@@ -2,35 +2,36 @@
 //  EditProfileViewController.swift
 //  Fun_Fitness
 //
-//  Created by Brandon Capparelli on 5/11/21.
+//  Created by Frankie Ocegueda on 5/12/21.
 //
 
+import Foundation
 import UIKit
 
-class EditProfileViewController: UIViewController
-{
-    @IBOutlet var nameTextField: UITextField!
-    @IBOutlet var weightTextField: UITextField!
-    @IBOutlet var heightTextField: UITextField!
-    @IBOutlet var ageTextField: UITextField!
-    
-    let main = ViewController()
-    
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-    }
-
-    @IBAction func submit(_ sender: Any)
-    {
-        currentProfile.name = String(nameTextField.text!)
-        currentProfile.height = Double(heightTextField.text!)!
-        currentProfile.weight = Double(weightTextField.text!)!
-        currentProfile.age = Double(ageTextField.text!)!
-
+class EditProfileViewController: UIViewController {
+    @IBOutlet weak var profileName: UILabel!
+    @IBOutlet weak var profileHeight: UITextField!
+    @IBOutlet weak var profileWeight: UITextField!
+    @IBOutlet weak var profileAge: UITextField!
+    @IBOutlet weak var profileSex: UITextField!
+    let main: ViewController = ViewController()
+    let myProf: MyProfileViewController = MyProfileViewController()
+    @IBAction func submit(_ sender: Any) {
+        let tempHeight = Double(profileHeight.text!)
+        let tempWeight = Double(profileWeight.text!)
+        let tempAge = Double(profileAge.text!)
+        let tempSex = profileSex.text
+        if let height = tempHeight {currentProfile.height = height}
+        if let weight = tempWeight {currentProfile.weight = weight}
+        if let age = tempAge {currentProfile.age = age}
+        if let sex = tempSex {if sex != "" {currentProfile.sex = sex}}
+        currentProfile.mybmi = BMI(currentProfile.height, currentProfile.weight)
+        currentProfile.mybmr = BMR(currentProfile.height, currentProfile.weight, currentProfile.age)
+        profileNames.profiles[currentProfilePos] = currentProfile
         profileNames.save()
-        main.pickerView.reloadAllComponents()
-        currentProfile.display()
-        dismiss(animated: true, completion: nil)
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        profileName.text = currentProfile.name
     }
 }

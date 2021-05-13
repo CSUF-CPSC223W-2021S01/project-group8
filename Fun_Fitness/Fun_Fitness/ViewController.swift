@@ -7,13 +7,19 @@
 import UIKit
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
 {
-    @IBOutlet var profileField: UITextField!
+    @IBOutlet weak var profileField: UITextField!
     @IBAction func didTapEnter(_ sender: Any)
-    {}
+    {
+        if profileField.text != ""
+        {
+            
+        }
+    }
     
     @IBAction func didTapNewProfile(_ sender: Any)
-    {}
+    {
 
+    }
     var pickerView = UIPickerView()
     override func viewDidLoad()
     {
@@ -40,11 +46,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
     {
         currentProfile = profileNames.profiles[row]
+        currentProfilePos = row
         return profileNames.profiles[row].name
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
+        currentProfile = profileNames.profiles[row]
+        currentProfilePos = row
         profileField.text = profileNames.profiles[row].name
         profileField.resignFirstResponder()
     }
@@ -52,7 +61,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func profileSubmit(_ data: Profile)
     {
         profileNames.profiles.append(data)
-        pickerView.reloadAllComponents()
         profileNames.save()
+        pickerView.reloadAllComponents()
     }
 }
+

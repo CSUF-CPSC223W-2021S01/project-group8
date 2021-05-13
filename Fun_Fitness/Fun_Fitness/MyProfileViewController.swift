@@ -5,27 +5,35 @@
 //  Created by Brandon Capparelli on 5/6/21.
 //
 
-import Foundation
 import UIKit
+import Foundation
+
+
 
 class MyProfileViewController: UIViewController
 {
-    @IBOutlet var userInfo: UILabel!
+    @IBOutlet weak var userInfo: UILabel!
     
-    var main = ViewController()
+    var main: ViewController = ViewController()
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        changeProfile()
+        viewLoadSetup()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewLoadSetup()
+    }
+    func viewLoadSetup(){
+        changeProfile(currentProfile)
     }
     
-    func changeProfile()
+    func changeProfile(_ selectedProfile: Profile)
     {
-        let selectedProfile = currentProfile
         let name = "Name: \(String(selectedProfile.name))\n"
         let weight = "Weight: \(String(selectedProfile.weight))\n"
-        let height = "Height: \(String(selectedProfile.height))\n"
+        let height = "Height \(String(selectedProfile.height))\n"
         let age = "Age: \(String(selectedProfile.age))\n"
         let sex = "Sex: \(String(selectedProfile.sex))\n"
         let userBMI = "Your BMI: \(String(selectedProfile.mybmi.display()))\n"
@@ -33,4 +41,5 @@ class MyProfileViewController: UIViewController
         
         userInfo.text = name + weight + height + age + sex + userBMI + userBMR
     }
+    
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C30509C264CB9FA00A31B24 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C30509B264CB9FA00A31B24 /* EditProfileViewController.swift */; };
 		FA2D24B026420FFC00B0D16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D24AF26420FFC00B0D16F /* AppDelegate.swift */; };
 		FA2D24B226420FFC00B0D16F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D24B126420FFC00B0D16F /* SceneDelegate.swift */; };
 		FA2D24B426420FFC00B0D16F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2D24B326420FFC00B0D16F /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C30509B264CB9FA00A31B24 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		FA2D24AC26420FFC00B0D16F /* Fun_Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fun_Fitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2D24AF26420FFC00B0D16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA2D24B126420FFC00B0D16F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,10 +121,11 @@
 				FA2D24EA2642111F00B0D16F /* UserProfile.swift */,
 				FA2D24E22642111400B0D16F /* AddProfileViewController.swift */,
 				FA3B37722643994800850991 /* ExerciseViewController.swift */,
-				FA2D24B526420FFC00B0D16F /* Main.storyboard */,
 				FA66F9172643D39500FE6EE0 /* MyProfileViewController.swift */,
+				FA2D24B526420FFC00B0D16F /* Main.storyboard */,
 				FA2D24B826420FFE00B0D16F /* Assets.xcassets */,
 				FA2D24BA26420FFE00B0D16F /* LaunchScreen.storyboard */,
+				2C30509B264CB9FA00A31B24 /* EditProfileViewController.swift */,
 				FA2D24BD26420FFE00B0D16F /* Info.plist */,
 			);
 			path = Fun_Fitness;
@@ -284,6 +287,7 @@
 				FA2D24B226420FFC00B0D16F /* SceneDelegate.swift in Sources */,
 				FA2D24EF2642111F00B0D16F /* Calculations.swift in Sources */,
 				FA3B37742643994800850991 /* ExerciseViewController.swift in Sources */,
+				2C30509C264CB9FA00A31B24 /* EditProfileViewController.swift in Sources */,
 				FA2D24EE2642111F00B0D16F /* Calculations 2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
